@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- TIPO DE LENGUAJE QUE UTILIZO-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML</title>
+</head>
+<body>
+    <h1> PAULA BATALLA </h1> <!-- ENCABEZADO NIVEL 1 -->
+    <p> 
+        Hola, tengo <i>23 años</i> y soy <strong>estudiante universitaria<strong> y de <u>programación</u>.
+    </p>
+
+    <h2> Aptitudes personales </h2>
+    <ul type = "circle">
+        <li> Asertividad </li> 
+        <li> Trabajo en equipo </li> 
+        <li type="square"> Escucha activa </li> 
+    </ul>
+
+    <h2> Tecnologias </h2> <!-- ENCABEZADO NIVEL 2-->
+    <ol type= "I">
+    <li> JAVA </li>
+    <li> HTML </li>
+    <li> CSS </li>  
+    </ol>
+
+    <h2> Enlace a páginas web existentes </h2>
+    <ol type="circle">
+    <!-- ENLACE DE PAGINAS WEB -->
+    <a href = "https://www.youtube.com/"> <img src="https://1000marcas.net/wp-content/uploads/2020/02/YouTube-Logo-2017.jpg" 
+        alt="YOUTUBE" width="100" height="50" border = 2> </a> <!-- LINK CON FOTO. widh= ancho, height=alto border= borde --> 
+    <br>
+    <a href="https://www.wikipedia.com/">  WIKIPEDIA </a> <!-- LINK CON PALABRA-->
+    <ol>
+
+    <h2> Creación de tabla </h2>
+    <table>
+        <tr> <!-- TITULO DE LA COLUMNA-->
+         <th> Animales domésticos </th>
+         <th> Animales salvajes </th>
+        </tr>
+        <tr> <!-- LOS ESCRIBE EN FILA, OSEA HACIA LA DERECHA-->
+         <td> Perro </td>
+         <td> León </td>
+        </tr>
+        <tr>
+         <td> Gato </td>
+         <td> Oso </td>
+        </tr>
+        </table>
+
+        <br> <!--Ejemplo de DIVISION -->
+        <p> EJEMPLO DE DIVISION </p>
+
+        <Div align= "left">
+            <p> Párrafo1 </p>
+            <p> Párrafo2 </p>
+            <p> Párrafo3 </p>
+            </Div>
+        
+        <br> <!-- EJEMPLO DE SPAN-->
+        <p> EJEMPLO DE SPAN </p>
+        <p> Yo estudio en <span style= "color : yellow">Egg</span> Programación FullStack</p>
+
+
+
+    <h2> Creación de formulario </h2>
+    <button>
+        <!-- SIN RELACION ENTRE LABEL E INPUT-->
+        <p> FORMA SENCILLA NO RELACIONAL: </p>
+        <br>
+        <label> Nombre del Usuario</label>
+        <br>
+        <input type="text" name="nombre" placeholder="Primer nombre">
+        <br>
+        <label> Email</label>
+        <br>
+        <input type="email" name="email" placeholder="nombre@gmail.com">
+        <br>
+        <label> Comentario</label>
+        <br>
+        <textarea name= “comentario” rows= “10” cols= “40” placeholder= "Escribe un comentario..."></textarea>
+
+        <!-- OTRA MANERA: genera la relacion entre el label con el input donde for e id tiene el mismo valor -->
+        <p> FORMA RELACIONAL: </p>
+        <br>
+        <label for="nombre">Nombre del Usuario</label>
+        <br>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="edad"> Edad </label> 
+        <br>
+        <input type= "number" id="edad">
+        <br>
+        <label for= "contraseña">Contraseña</label>
+        <br>
+        <input type= "password" id="contraseña" name="contraseña">
+        <br>
+        <label for="nacimiento"> Fecha de nacimiento </label> <!-- el calendario para seleccionar fecha es a traves de JS-->
+        <br>
+        <input type= "date" id="nacimiento" name="fecha">
+
+        <br> <!-- CAJA DE OPCIONES-->
+        <p> CAJA DE OPCIONES </p>
+        <select name= “estacion” size= “4”>
+            <option > Otoño </option>
+            <option> Invierno </option>
+            <option selected> Primavera </option> <!-- opcion por defecto-->
+            <option> Verano </option>
+        </select>
+
+        <br> <!-- BOTON DE OPCIONES: aparece un lista para seleccionar (como multiple choice)-->
+        <p> BOTON DE OPCIONES </p>
+        <input type="radio" id=”primavera" name="estacion" value="1”>
+        <label for="primavera">Primavera</label>   
+        <br> 
+        <input type="radio" id=”verano" name="estacion" value="2”>
+        <label for="verano">Verano</label>
+
+        <br> <!-- CAJA DE VALIDACION -->
+        <p> CAJA DE VALIDACIÓN </p>
+        <input type= "checkbox" id="primavera" name= "estación" value="1">
+        <label for="primavera">Primavera</label>
+        <br>
+        <input type="checkbox" id="verano" name="estacion" value="2">
+        <label for="verano">Verano</label>
+        <br>
+
+        <!-- BOTONES -->      
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        </form>    
+
+       
+    <body>
+</html>
